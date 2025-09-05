@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'gradle test'
+                bat 'gradle test  --warning-mode all'
             }
         }
         stage('Archive') {
